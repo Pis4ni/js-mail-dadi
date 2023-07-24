@@ -23,3 +23,25 @@ if (denied == true) {
     // stampo a schermo un messaggio di accesso consentito
     console.log('La tua E-mail è tra quelle con accesso consentito')  
 }
+//! -------------- DADI ---------------!//
+// creo una variabile random per il valore del dado del player
+let randomPlayer = Math.floor(Math.random() * 6) + 1
+// mostro il valore dado del player a schermo
+console.log(randomPlayer)
+// creo una variabile random per il valore del dado del PC
+let randomPc = Math.floor(Math.random() * 6) + 1
+// mostro il valore dado del PC a schermo
+console.log(randomPc)
+//SE il valore del dado del PC è maggiore del valore del dado del player
+if (randomPc>randomPlayer) {
+    // mostro a schermo il messaggio di sconfitta
+    console.log('Hai perso!')
+    //ALTRIMENTI SE il valore del dado del PC é uguale al valore del dado del player
+}else if (randomPc==randomPlayer) {
+    // mostro a schermo il messaggio di pareggio
+    console.log('Pareggio!')
+    // ALTRIMENTI 
+}else{
+    // mostro a schermo il messaggio di vittoria
+    console.log('Hai Vinto!')
+}
