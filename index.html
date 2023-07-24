@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="./js/script.js" defer></script>
     <title>js-mail-dadi</title>
 </head>
 <body>
     <main>
-        <section id="login" class="container">
+        <section id="login" class="container py-5">
+            <h2 class="mb-5">Mail</h2>
             <div class="card text-center">
                 <div class="card-header">
                   LOG-IN
@@ -20,12 +23,35 @@
                     <label for="e_mail" class="form-label">Email address</label>
                     <input type="email" class="form-control" id="e_mail" placeholder="name@example.com">
                   </div>
-                  <input type="button" value="Log in" class="btn btn-primary">
+                  <input type="button" value="Log in" class="btn btn-primary" id="log_in_btn">
                 </div>
-                <div class="card-footer text-body-secondary" id="log_in_btn">
-                  Powered by Pis4ni
+                <div class="card-footer text-body-secondary" id="card_footer">
+                    
                 </div>
-              </div>
+            </div>
+        </section>
+        <section id="dadi" class="container py-5">
+            <h2 class="mb-5">Dadi</h2>
+            <div class="card text-center">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="dice" id="player_dice">
+                                X
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="dice" id="pc_dice">
+                                X
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="button" value="DICE!" class="btn btn-primary" id="dice_btn">
+                <div class="card-footer text-body-secondary" id="card_footer_dice">
+                    Gioca!
+                </div>
+            </div>
         </section>
     </main>
 </body>
